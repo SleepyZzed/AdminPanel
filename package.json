@@ -1,6 +1,6 @@
 {
   "homepage": "https://SleepyZzed.github.io/AdminPanel/",
-  "name": "reactadminpanel",
+  "name": "adminpanel",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
