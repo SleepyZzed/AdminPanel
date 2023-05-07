@@ -11,11 +11,15 @@ import Person2Icon from '@mui/icons-material/Person2';
 import LogoutIcon from '@mui/icons-material/Logout';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
 import StoreIcon from '@mui/icons-material/Store';
+import { Link } from 'react-router-dom';
+
 const Sidebar = () => {
   return (
     <div className='sidebar'>
         <div className="top">
+            <Link to="/"  style={{textDecoration: 'none'}}>
             <span className="logo">ZedAdmin</span>
+            </Link>
         </div>
         <hr />
         <div className="center">
@@ -26,14 +30,19 @@ const Sidebar = () => {
                     <span>Dashboard</span>
                 </li>
                 <p className="title">LISTS</p>
+                <Link to="/users"  style={{textDecoration: 'none'}}>
+
                 <li>
                     <AccountCircleIcon className='icon'/>
                     <span>Users</span>
                 </li>
+                </Link>
+                <Link to="/products"  style={{textDecoration: 'none'}}>
                 <li>
                     <StoreIcon className='icon'/>
                     <span>Products</span>
                 </li>
+                </Link>
                 <li>
                     <CreditCardIcon className='icon'/>
                     <span>Orders</span>
