@@ -17,7 +17,7 @@ const Datatable = () => {
     const actionColumn =[{field:"action", headerName:"Action", width: 200, renderCell:(params)=>{
         return(
             <div className="cellAction">
-               <Link to="/users/test"  style={{textDecoration: 'none'}}>
+               <Link to="/AdminPanel/users/test"  style={{textDecoration: 'none'}}>
                 <div className="viewButton">View</div>
                 </Link>
                 <div className="deleteButton" onClick={() => handleDelete(params.row.id)}>Delete</div>
@@ -29,7 +29,7 @@ const Datatable = () => {
     <div className='datatable'>
       <div className="datatableTitle">
         Create New User
-        <Link to="/users/new" className='link'>
+        <Link to="/AdminPanel/users/new" className='link'>
             Add New
         </Link>
       </div>
